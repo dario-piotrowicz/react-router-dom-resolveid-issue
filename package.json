@@ -1,0 +1,17 @@
+{
+  "name": "react-router-dom-resolveid-issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-router-dom": "^6.23.1",
+    "vite": "^6.0.0-alpha"
+  }
+}
