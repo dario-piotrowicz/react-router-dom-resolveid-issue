@@ -1,8 +1,8 @@
 // @ts-check
+
 /**
- * 
- * @param {import('vite').ViteDevServer} server 
- * @returns 
+ * @param {import('vite').ViteDevServer} server
+ * @returns {string}
  */
 export function getHttpServerAddress(server) {
   if (!server.httpServer) {
