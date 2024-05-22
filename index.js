@@ -16,11 +16,12 @@ const server = await createServer({
         return async () => {
           server.middlewares.use(async (req, res) => {
             const { id } =
-              (await server.environments["ssr"].pluginContainer.resolveId(
+              (await server.pluginContainer.resolveId(
                 "react-router-dom",
                 "",
                 {
-                  // https://github.com/vitejs/vite/blob/v6.0.0-alpha.13/packages/vite/src/node/plugins/resolve.ts#L229-L230
+                  ssr: true,
+                  // https://github.com/vitejs/vite/blob/v5.2.11/packages/vite/src/node/plugins/resolve.ts#L179-L181
                   custom: { "node-resolve": { isRequire: true } },
                 }
               )) ?? {};

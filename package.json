@@ -12,6 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "react-router-dom": "^6.23.1",
-    "vite": "^6.0.0-alpha"
+    "vite": "^5.2.11"
   }
 }
